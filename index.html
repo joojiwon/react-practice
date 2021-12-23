@@ -14,7 +14,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
       const root = document.getElementById("root");
-      function App()  { 
+      function MinutesToHours()  { 
         const [amount, setAmount] = React.useState(0);
         const [flip, setFlip] = React.useState(false);
         const onChange = (event) => {
@@ -53,6 +53,19 @@
             <button onClick={onFlip}>{flip ? "Turn back" : "Flip"}</button>
             </div>
       );}
+     function KmToMiles () {
+         return <h3>KM 2 M</h3>;
+     }
+      function App()  { 
+        
+        return  ( 
+            <div>
+            <h1>Super Converter</h1>
+            <MinutesToHours/>
+            <KmToMiles/>
+            </div>
+      );}
+     
       ReactDOM.render(<App/>, root); 
   </script>
 </html>
