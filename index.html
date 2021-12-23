@@ -50,7 +50,7 @@
                         />
             </div>
             <button onClick={Reset}>Reset</button>
-            <button onClick={onFlip}>Flip</button>
+            <button onClick={onFlip}>{flip ? "Turn back" : "Flip"}</button>
             </div>
       );}
       ReactDOM.render(<App/>, root); 
